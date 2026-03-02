@@ -75,9 +75,6 @@ namespace InventoryManagement.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            dotnet clean
-dotnet build
-dotnet run
             await _productRepository.DeleteAsync(id); // updated
             return RedirectToAction(nameof(Index));
         }

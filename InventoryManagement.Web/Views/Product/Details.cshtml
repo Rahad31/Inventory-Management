@@ -1,0 +1,16 @@
+@model InventoryManagement.Domain.Entities.Product
+@{
+    Layout = "_Layout";
+}
+
+<h2>Product Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <p><strong>Name:</strong> @Model.Name</p>
+        <p><strong>Price:</strong> @Model.Price</p>
+        <p><strong>Quantity:</strong> @Model.Quantity</p>
+    </div>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back</a>
